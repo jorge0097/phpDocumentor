@@ -1,6 +1,6 @@
 <?php
 require 'bootstrap.php';
-
+//Declaramos una consulta que cree la tabla person si no existe e insertamos varias filas.
 $statement = <<<EOS
     CREATE TABLE IF NOT EXISTS person (
         id INT NOT NULL AUTO_INCREMENT,
@@ -30,7 +30,11 @@ $statement = <<<EOS
         (8, 'Josh', 'Harrelson', null, null),
         (9, 'Anna', 'Harrelson', 7, 8);
 EOS;
-
+/**
+* Probamos a ejecutar la consulta
+* Si todo funciona correctamente se crea la tabla si no exisitía, se insertan varias filas y se muestra por pantalla Success
+* Si algo no sale bien capturamos el error
+*/
 try {
     $createTable = $dbConnection->exec($statement);
     echo "Success!\n";

@@ -2,14 +2,26 @@
 namespace Src\TableGateways;
 
 class PersonGateway {
-
+    /**
+    * @access private
+    * @var DatabaseConnetor
+    */
     private $db = null;
-
+    /**
+    * Constructor de la clase PersonGateway
+    * @param $db base de datos donde vamos a conectarnos
+    */
     public function __construct($db)
     {
         $this->db = $db;
     }
-
+    /**
+    * Funcionalidad que se encarga de procesar mostrar los datos de todas las personas
+    * Se intenta realizar la consuta  a la base de datos
+    * Si es correcto devuelve la consulta
+    * Si hay algún error lo caputa
+    * @return $result
+    */
     public function findAll()
     {
         $statement = "
@@ -27,7 +39,13 @@ class PersonGateway {
             exit($e->getMessage());
         }
     }
-
+    /**
+    * Funcionalidad que devuelve los datos de una persona con determinado id pasado como parametro
+    * Se intenta realizar la consulta a la base de datos
+    * Si todo es correcto devuelve la consulta
+    * Si algo falla captura el error
+    * @return $result
+    */
     public function find($id)
     {
         $statement = "
@@ -47,7 +65,14 @@ class PersonGateway {
             exit($e->getMessage());
         }
     }
-
+    /**
+    * Funcionalidad que añade una nueva persona en base a un $input proporcionado
+    * @param $input datos de la persona a insertar
+    * Se intenta realizar la consulta a la base de datos
+    * Si  todo es correcto inserta la nueva persona y devuelve el núermo de filas afectadas
+    * Si algo falla captura el error
+    * @return $statement
+    */
     public function insert(Array $input)
     {
         $statement = "
@@ -70,7 +95,15 @@ class PersonGateway {
             exit($e->getMessage());
         }
     }
-
+    /**
+    * Funcionalidad que actualiza a una persona en base a un $id y un $input pasados como parámetros
+    * @param $id id de la persona a la que actualizar los datos
+    * @param $input datos a actualizar de la persona determinada
+    * Se intenta realizar la consulta
+    * Si todo sale bien se actulizan los datos de esa persona/s y se devuelven el número de filas afectdas
+    * Si algo sale mal se captura el error
+    * @return $statement
+    */
     public function update($id, Array $input)
     {
         $statement = "
@@ -97,7 +130,14 @@ class PersonGateway {
             exit($e->getMessage());
         }
     }
-
+    /**
+    * Funcionalidad que elimina a una persona en base a un $id pasado por parámetro
+    * @param $id identificador de la persona/s a eliminar
+    * Se intenta conectar a la base de datos
+    * Si todo funciona se elimina a la persona/s y se devuelve el número de filas afectadas
+    * Si algo sale mal se captura el error
+    * @return $statement
+    */
     public function delete($id)
     {
         $statement = "
