@@ -19,8 +19,11 @@ En phpDocumentor la documentación se distribuye en bloques "DocBlock" estos blo
 elemento  al que documentan con el siguiente formato:
 
 >/**
->*Descripción breve/n
+
+>*Descripción breve
+
 >*Descripción detallada con las líneas necesarias
+
 >*/
 
 
