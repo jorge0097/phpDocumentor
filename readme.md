@@ -1,10 +1,10 @@
-#PHPDOCUMENTOR
+# PHPDOCUMENTOR
 
-##Documentación
+## Documentación
 
 https://docs.phpdoc.org/guide/getting-started/installing.html
 
-##Qué es
+## Qué es
 PhpDocumentor permite generar automaticamente una buena documentación en nuestro código mediante comentarios y 
 unas etiquetas especiales definimos de forma sencilla que hace la cada clase, cada método y cada función de nuestro código.
 
@@ -14,7 +14,7 @@ PhpDocumentor permite generar la documentación de varias formas y en varios for
 . Desde interfaz web
 . Desde el propio código
 
-##Funcionamiento
+## Funcionamiento
 En phpDocumentor la documentación se distribuye en bloques "DocBlock" estos bloques siempre se colocan justo antes del
 elemento  al que documentan con el siguiente formato:
 /**
@@ -33,7 +33,7 @@ function suma(){
 
 También hay diferentes marcas que se pueden incluir mediante una '@' que se pueden consultar el la documentación oficial [phpDocumentor](https://docs.phpdoc.org/guide/references/phpdoc/tags/index.html)
  
-##Instalación 
+## Instalación 
 Si queremos poder usar phpDocumentor a través del navegador necesitaremos apache instalado [Apache docs](https://www.digitalocean.com/community/tutorials/how-to-install-the-apache-web-server-on-ubuntu-20-04)
 
 Por otro lado tendremos que instalar php 7.4.0 o superior y las siguiente extensiones:
@@ -42,30 +42,30 @@ Por otro lado tendremos que instalar php 7.4.0 o superior y las siguiente extens
 * xml
 
 
-###Para instalar Apache desde el terminal escribimos:
+### Para instalar Apache desde el terminal escribimos:
 
-	`sudo apt update`
+	sudo apt update
 
 	sudo apt install apache2 
 
-###Permitimos a apache en el firewall
+### Permitimos a apache en el firewall
 
-	`sudo ufw allow 'Apache'`
+	sudo ufw allow 'Apache'
 
-###Para revisar el estado de Apache escribimos:
+### Para revisar el estado de Apache escribimos:
 
-	`sudo service apache2 status`
+	sudo service apache2 status
 
 Una vez instalado tenemos que ubicar nuestras aplicaciones en /var/www/html para poder visualizarlas, ya que es la ruta
 por defecto.
 
-Para instalar php y las externsiones simplemente desde el terminal escribimos:
+Para instalar php y las extensiones simplemente desde el terminal escribimos:
 
-	`apt install php-cli`
+	apt install php-cli
 
 NOTA:tenga en cuenta que ha de poner la versión de su php
 
-	`apt install php8.1-mbstring`
+	apt install php8.1-mbstring
 	
 	`apt install php8.1-xml`
 
