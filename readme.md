@@ -18,9 +18,8 @@ PhpDocumentor permite generar la documentación de varias formas y en varios for
 En phpDocumentor la documentación se distribuye en bloques "DocBlock" estos bloques siempre se colocan justo antes del
 elemento  al que documentan con el siguiente formato:
 
->[!NOTE]
 >/**
->*Descripción breve
+>*Descripción breve/n
 >*Descripción detallada con las líneas necesarias
 >*/
 
