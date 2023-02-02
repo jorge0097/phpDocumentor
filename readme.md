@@ -18,16 +18,16 @@ PhpDocumentor permite generar la documentación de varias formas y en varios for
 En phpDocumentor la documentación se distribuye en bloques "DocBlock" estos bloques siempre se colocan justo antes del
 elemento  al que documentan con el siguiente formato:
 
->/**
->*Descripción breve
->*Descripción detallada con las líneas necesarias
->*/
+/**
+*Descripción breve
+*Descripción detallada con las líneas necesarias
+*/
 
 
 Ejemplo:
 
-` /**
- Este Docblock documenta la función suma()
+/**
+*Este Docblock documenta la función suma()
 */
 
 function suma(){
