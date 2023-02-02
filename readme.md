@@ -8,11 +8,11 @@ https://docs.phpdoc.org/guide/getting-started/installing.html
 PhpDocumentor permite generar automaticamente una buena documentación en nuestro código mediante comentarios y 
 unas etiquetas especiales definimos de forma sencilla que hace la cada clase, cada método y cada función de nuestro código.
 
-PhpDocumentor permite generar la documentación de varias formas y en varios for>
+PhpDocumentor permite generar la documentación de varias formas y en varios formatos(html,xml..):
 
-. Desde la línea de comandos
-. Desde interfaz web
-. Desde el propio código
+* Desde la línea de comandos
+* Desde interfaz web
+* Desde el propio código
 
 ## Funcionamiento
 En phpDocumentor la documentación se distribuye en bloques "DocBlock" estos bloques siempre se colocan justo antes del
